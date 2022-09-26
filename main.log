@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  25 SEP 2022 21:22
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  25 SEP 2022 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/PREDATOR/IAX PDF/main.tex"
-(c:/Users/PREDATOR/IAX PDF/main.tex
+**c:/Users/PREDATOR/IAx_SCMx1/main.tex
+(c:/Users/PREDATOR/IAx_SCMx1/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (C:\MikTex\tex/latex/koma-script\scrartcl.cls
 Document Class: scrartcl 2022/07/04 v3.37 KOMA-Script document class (article)
@@ -1264,10 +1264,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip106
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 184.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 184.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 184.
-Package hyperref Info: Option `colorlinks' set `true' on input line 184.
+Package hyperref Info: Option `breaklinks' set `true' on input line 183.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 183.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 183.
+Package hyperref Info: Option `colorlinks' set `true' on input line 183.
  (C:\MikTex\tex/latex/listings\listings.sty
 \lst@mode=\count506
 \lst@gtempboxa=\box133
@@ -1336,39 +1336,39 @@ Package csquotes Info: ... found 'babel' package.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 248.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 248.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 247.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 247.
  (C:\MikTex\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 248.
-LaTeX Font Info:    ... okay on input line 248.
-Package scrbase Info: activating english \abstractname on input line 248.
-Package scrbase Info: activating english \partname on input line 248.
-Package scrbase Info: activating english \figurename on input line 248.
-Package scrbase Info: activating english \tablename on input line 248.
-Package scrbase Info: activating english \contentsname on input line 248.
-Package scrbase Info: activating english \listfigurename on input line 248.
-Package scrbase Info: activating english \listtablename on input line 248.
-Package scrbase Info: activating english \refname on input line 248.
-Package scrbase Info: activating english \indexname on input line 248.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+Package scrbase Info: activating english \abstractname on input line 247.
+Package scrbase Info: activating english \partname on input line 247.
+Package scrbase Info: activating english \figurename on input line 247.
+Package scrbase Info: activating english \tablename on input line 247.
+Package scrbase Info: activating english \contentsname on input line 247.
+Package scrbase Info: activating english \listfigurename on input line 247.
+Package scrbase Info: activating english \listtablename on input line 247.
+Package scrbase Info: activating english \refname on input line 247.
+Package scrbase Info: activating english \indexname on input line 247.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1409,11 +1409,11 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 248.
-Package microtype Info: Applying patch `item' on input line 248.
-Package microtype Info: Applying patch `toc' on input line 248.
-Package microtype Info: Applying patch `eqnum' on input line 248.
-Package microtype Info: Applying patch `footnote' on input line 248.
+LaTeX Info: Redefining \microtypecontext on input line 247.
+Package microtype Info: Applying patch `item' on input line 247.
+Package microtype Info: Applying patch `toc' on input line 247.
+Package microtype Info: Applying patch `eqnum' on input line 247.
+Package microtype Info: Applying patch `footnote' on input line 247.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -2113,7 +2113,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 ) (C:\MikTex\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 248.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 247.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
@@ -2131,9 +2131,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 248.
-Package biblatex Info: Reference segment=0 on input line 248.
-Package hyperref Info: Link coloring ON on input line 248.
+Package biblatex Info: Reference section=0 on input line 247.
+Package biblatex Info: Reference segment=0 on input line 247.
+Package hyperref Info: Link coloring ON on input line 247.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -2145,7 +2145,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 248.
+(scrartcl)           before \begin{document} on input line 247.
  (C:\MikTex\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (C:\MikTex\tex/latex/bookmark\bkm-dvipdfm.def
@@ -2159,56 +2159,56 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 248.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 248.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 248.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 248.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 248.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 248.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 248.
-LaTeX Font Info:    Redeclaring math accent \check on input line 248.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 248.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 248.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 248.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 248.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 248.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 247.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 247.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 247.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 247.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 247.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 247.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 247.
+LaTeX Font Info:    Redeclaring math accent \check on input line 247.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 247.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 247.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 247.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 247.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 248.
+(Font)              `operators' in the math version `normal' on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/RevxNeueDemo(0)/m/n on input line 248.
+(Font)                  OT1/cmr/m/n --> TU/RevxNeueDemo(0)/m/n on input line 247.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 248.
+(Font)              `operators' in the math version `bold' on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/RevxNeueDemo(0)/m/n on input line 248.
+(Font)                  OT1/cmr/bx/n --> TU/RevxNeueDemo(0)/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/RevxNeueDemo(0)/m/n --> TU/RevxNeueDemo(0)/m/n on input line 248.
+(Font)                  TU/RevxNeueDemo(0)/m/n --> TU/RevxNeueDemo(0)/m/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/RevxNeueDemo(0)/m/it on input line 248.
+(Font)                  OT1/cmr/m/it --> TU/RevxNeueDemo(0)/m/it on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/RevxNeueDemo(0)/b/n on input line 248.
+(Font)                  OT1/cmr/bx/n --> TU/RevxNeueDemo(0)/b/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 248.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 248.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/RevxNeueDemo(0)/m/n --> TU/RevxNeueDemo(0)/b/n on input line 248.
+(Font)                  TU/RevxNeueDemo(0)/m/n --> TU/RevxNeueDemo(0)/b/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/RevxNeueDemo(0)/b/it on input line 248.
+(Font)                  OT1/cmr/bx/it --> TU/RevxNeueDemo(0)/b/it on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 248.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 248.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 247.
 Package microtype Info: Character `~ (= ~)' is missing
 (microtype)             in font `\TU/RevxNeueDemo(0)/m/n/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2332,13 +2332,13 @@ Package microtype Info: Character `\textquestiondown ' is missing
  (C:\MikTex\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 255.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 254.
  (C:\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 255.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 254.
  (C:\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\MikTex\tex/latex/microtype\mt-msb.cfg
@@ -2346,7 +2346,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (C:\MikTex\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Overfull \hbox (8.0pt too wide) in paragraph at lines 255--256
+Overfull \hbox (8.0pt too wide) in paragraph at lines 254--255
 []$[]$ 
  []
 
@@ -2355,26 +2355,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 257--258
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 256--257
 []  [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 \openout5 = `./cpt_files/main-1.cpt'.
 
 (cpt_files/main-1.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 262--263
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 261--262
 | [][][] 
  []
 
 \openout5 = `./cpt_files/main-2.cpt'.
 
 (cpt_files/main-2.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 266--267
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 265--266
 []| [][][] 
  []
 
@@ -2412,38 +2412,38 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/RevxNeueDemo(0)/b/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
 )
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 270--271
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 269--270
 []| [][][] 
  []
 
 \openout5 = `./cpt_files/main-4.cpt'.
 
 (cpt_files/main-4.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 274--275
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 273--274
 []| [][][] 
  []
 
 \openout5 = `./cpt_files/main-5.cpt'.
 
 (cpt_files/main-5.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 278--279
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 277--278
 []| [][][] 
  []
 
 
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 280--281
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 279--280
 []  [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 \openout5 = `./cpt_files/main-6.cpt'.
 
 (cpt_files/main-6.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 284--285
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 283--284
 []| [][][] 
  []
 
@@ -2458,7 +2458,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  56449 strings out of 410536
- 1300000 string characters out of 2820497
+ 1300006 string characters out of 2820497
  2462525 words of memory out of 3000000
  76823 multiletter control sequences out of 15000+600000
  478079 words of font info for 73 fonts, out of 8000000 for 9000

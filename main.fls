@@ -1,6 +1,6 @@
-PWD c:\Users\PREDATOR\IAX PDF
+PWD c:\Users\PREDATOR\IAx_SCMx1
 INPUT C:\Users\PREDATOR\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT c:\Users\PREDATOR\IAX PDF\main.tex
+INPUT c:\Users\PREDATOR\IAx_SCMx1\main.tex
 OUTPUT main.log
 INPUT C:\MikTex\tex\latex\koma-script\scrartcl.cls
 INPUT C:\MikTex\tex\latex\koma-script\scrartcl.cls
