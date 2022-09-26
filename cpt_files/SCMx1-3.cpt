@@ -1,3 +1,6 @@
 \subsubsection{Network Model}\topline
+EOQ formula:
+
+\[ Q^* = \sqrt{\frac{ABC}{D}} \]
 
 ^^E^^L 
