@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  25 SEP 2022 21:29
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  25 SEP 2022 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/PREDATOR/IAx_SCMx1/main.tex
-(c:/Users/PREDATOR/IAx_SCMx1/main.tex
+**c:/Users/PREDATOR/IAx_SCMx1/SCMx1.tex
+(c:/Users/PREDATOR/IAx_SCMx1/SCMx1.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (C:\MikTex\tex/latex/koma-script\scrartcl.cls
 Document Class: scrartcl 2022/07/04 v3.37 KOMA-Script document class (article)
@@ -1333,8 +1333,8 @@ Package fontspec Info: Font family 'RevxNeueDemo(0)' created for font 'Revx
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (main.aux)
-\openout1 = `main.aux'.
+ (SCMx1.aux)
+\openout1 = `SCMx1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
 LaTeX Font Info:    ... okay on input line 247.
@@ -2126,17 +2126,17 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `main.bcf'.
+\openout4 = `SCMx1.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+Package biblatex Info: ... file 'SCMx1.bbl' found.
+ (SCMx1.bbl)
 Package biblatex Info: Reference section=0 on input line 247.
 Package biblatex Info: Reference segment=0 on input line 247.
 Package hyperref Info: Link coloring ON on input line 247.
- (main.out) (main.out)
+ (SCMx1.out) (SCMx1.out)
 \@outlinefile=\write6
-\openout6 = `main.out'.
+\openout6 = `SCMx1.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -2332,13 +2332,13 @@ Package microtype Info: Character `\textquestiondown ' is missing
  (C:\MikTex\tex/latex/microtype\mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 254.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 252.
  (C:\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 254.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 252.
  (C:\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\MikTex\tex/latex/microtype\mt-msb.cfg
@@ -2346,7 +2346,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) (C:\MikTex\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-Overfull \hbox (8.0pt too wide) in paragraph at lines 254--255
+Overfull \hbox (8.0pt too wide) in paragraph at lines 252--253
 []$[]$ 
  []
 
@@ -2355,32 +2355,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 256--257
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 254--255
 []  [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-\openout5 = `./cpt_files/main-1.cpt'.
+\openout5 = `./cpt_files/SCMx1-1.cpt'.
 
-(cpt_files/main-1.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 261--262
+(cpt_files/SCMx1-1.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 259--260
 | [][][] 
  []
 
-\openout5 = `./cpt_files/main-2.cpt'.
+\openout5 = `./cpt_files/SCMx1-2.cpt'.
 
-(cpt_files/main-2.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 265--266
+(cpt_files/SCMx1-2.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 263--264
 []| [][][] 
  []
 
-\openout5 = `./cpt_files/main-3.cpt'.
+\openout5 = `./cpt_files/SCMx1-3.cpt'.
 
-(cpt_files/main-3.cpt
+(cpt_files/SCMx1-3.cpt
 Package microtype Info: Character `~ (= ~)' is missing
 (microtype)             in font `\TU/RevxNeueDemo(0)/b/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2412,57 +2412,57 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/RevxNeueDemo(0)/b/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
 )
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 269--270
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 267--268
 []| [][][] 
  []
 
-\openout5 = `./cpt_files/main-4.cpt'.
+\openout5 = `./cpt_files/SCMx1-4.cpt'.
 
-(cpt_files/main-4.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 273--274
+(cpt_files/SCMx1-4.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 271--272
 []| [][][] 
  []
 
-\openout5 = `./cpt_files/main-5.cpt'.
+\openout5 = `./cpt_files/SCMx1-5.cpt'.
 
-(cpt_files/main-5.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 277--278
+(cpt_files/SCMx1-5.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 275--276
 []| [][][] 
  []
 
 
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 279--280
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 277--278
 []  [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-\openout5 = `./cpt_files/main-6.cpt'.
+\openout5 = `./cpt_files/SCMx1-6.cpt'.
 
-(cpt_files/main-6.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 283--284
+(cpt_files/SCMx1-6.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 281--282
 []| [][][] 
  []
 
 [1
 
-] [2] (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
+] [2] (SCMx1.aux)
+Package rerunfilecheck Info: File `SCMx1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+Package logreq Info: Writing requests to 'SCMx1.run.xml'.
+\openout1 = `SCMx1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  56449 strings out of 410536
- 1300006 string characters out of 2820497
- 2462525 words of memory out of 3000000
+ 1300053 string characters out of 2820497
+ 2456530 words of memory out of 3000000
  76823 multiletter control sequences out of 15000+600000
  478079 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,6n,106p,10627b,3848s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,6n,106p,10628b,3848s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on main.xdv (2 pages, 33708 bytes).
+Output written on SCMx1.xdv (2 pages, 21864 bytes).
