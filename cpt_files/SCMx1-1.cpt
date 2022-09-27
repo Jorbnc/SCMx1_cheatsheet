@@ -1,2 +1,21 @@
+\subsubsection{Network Model}\topline
+^^I
+\begin{figure}[H]
+^^I\centering
+^^I^^I\begin{tikzpicture}
+^^I^^I\SetGraphUnit{3}
+^^I^^I\Vertex{B}
+^^I^^I\WE(B){A}
+^^I^^I\EA(B){C}
+^^I^^I\Edge[label = Materials](A)(B)
+^^I^^I\Edge[label = Products](B)(C)
+^^I^^I\Edge[label = Cash](C)(B)
+^^I^^I\Edge[label = Cash](B)(A)
+^^I^^I\tikzset{EdgeStyle/.append style = {bend left = 50}}
+^^I^^I\Edge[label = Information](A)(C)
+^^I^^I\Edge[label = Information](C)(A)
+^^I\end{tikzpicture}
+\end{figure}
 
-Suppliers, Producers, Customers. TEST^^E^^L 
+In a manufacturing context, a supply chain can be seen as a network of suppliers, manufacturers, distributors, and retailers.
+^^E^^L 

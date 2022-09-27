@@ -16,7 +16,17 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \usepackage{empheq} % Attractive Boxed Equations
 \usepackage[thinc]{esdiff} % Shorthand derivatives
 \usepackage{subcaption} % Para poner figuras al lado de las otras
-\usepackage{lipsum}
+
+% Graphs (Networks)
+\usepackage{tkz-graph}
+\GraphInit[vstyle = Shade]
+\tikzset{
+  LabelStyle/.style = { rectangle, rounded corners, draw,
+                        minimum width = 2em, fill = yellow!50, 
+                        text = red, font = \tiny\bfseries },
+  VertexStyle/.append style = { inner sep=5pt, 
+                                font = \Large\bfseries},
+  EdgeStyle/.append style = {->, bend left} }
 
 % Configuración de algunos packages que conozco
 \geometry{paper=a4paper,landscape, left=6mm,right=6mm, top=6mm,bottom=4mm}
@@ -247,7 +257,7 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \begin{document}
 
 % FIRST 4 COLS
-\begin{multicols*}{4}
+\begin{multicols*}{3}
 
 \parbox{\columnwidth}{\centering\Huge\color{Black}\textbf{SCMx1 \strut}}\scriptsize
 
@@ -255,11 +265,26 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 
 \subsection{What is a Supply Chain?}
 
-\sectionbox{
-Suppliers, Producers, Customers. TEST}
+\sectionbox{\subsubsection{Network Model}\topline
+	
+\begin{figure}[H]
+	\centering
+		\begin{tikzpicture}
+		\SetGraphUnit{3}
+		\Vertex{B}
+		\WE(B){A}
+		\EA(B){C}
+		\Edge[label = Materials](A)(B)
+		\Edge[label = Products](B)(C)
+		\Edge[label = Cash](C)(B)
+		\Edge[label = Cash](B)(A)
+		\tikzset{EdgeStyle/.append style = {bend left = 50}}
+		\Edge[label = Information](A)(C)
+		\Edge[label = Information](C)(A)
+	\end{tikzpicture}
+\end{figure}
 
-\sectionbox{
-In a manufacturing context, a supply chain can be seen as a network of suppliers, manufacturers, distributors, and retailers
+In a manufacturing context, a supply chain can be seen as a network of suppliers, manufacturers, distributors, and retailers.
 }
 
 \sectionbox{\subsubsection{Network Model}\topline
