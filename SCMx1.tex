@@ -17,17 +17,6 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \usepackage[thinc]{esdiff} % Shorthand derivatives
 \usepackage{subcaption} % Para poner figuras al lado de las otras
 
-% Graphs (Networks)
-\usepackage{tkz-graph}
-\GraphInit[vstyle = Shade]
-\tikzset{
-  LabelStyle/.style = { rectangle, rounded corners, draw,
-                        minimum width = 2em, fill = yellow!50, 
-                        text = red, font = \tiny\bfseries },
-  VertexStyle/.append style = { inner sep=5pt, 
-                                font = \Large\bfseries},
-  EdgeStyle/.append style = {->, bend left} }
-
 % Configuración de algunos packages que conozco
 \geometry{paper=a4paper,landscape, left=6mm,right=6mm, top=6mm,bottom=4mm}
 
@@ -49,6 +38,9 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 	\usetikzlibrary{
 		calc,
 		patterns,
+		positioning,
+		arrows.meta,
+		petri,
 		positioning
 	}
 	\pgfplotsset{
@@ -257,7 +249,7 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \begin{document}
 
 % FIRST 4 COLS
-\begin{multicols*}{3}
+\begin{multicols*}{4}
 
 \parbox{\columnwidth}{\centering\Huge\color{Black}\textbf{SCMx1 \strut}}\scriptsize
 
@@ -266,21 +258,38 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \subsection{What is a Supply Chain?}
 
 \sectionbox{\subsubsection{Network Model}\topline
-	
+
 \begin{figure}[H]
 	\centering
-		\begin{tikzpicture}
-		\SetGraphUnit{3}
-		\Vertex{B}
-		\WE(B){A}
-		\EA(B){C}
-		\Edge[label = Materials](A)(B)
-		\Edge[label = Products](B)(C)
-		\Edge[label = Cash](C)(B)
-		\Edge[label = Cash](B)(A)
-		\tikzset{EdgeStyle/.append style = {bend left = 50}}
-		\Edge[label = Information](A)(C)
-		\Edge[label = Information](C)(A)
+	\begin{tikzpicture}
+		[node distance=1cm,on grid,>={Stealth[length=1mm]},bend angle=45,auto,
+		every place/.style= {minimum size=3mm,thick,draw=none,shading=ball, ball color=BrickRed!75},
+		every transition/.style={thick,draw=black!75,fill=black!20},
+		red place/.style= {place,draw=red!75,fill=red!20},
+		every label/.style= {red}]
+		\node [place] (M) {};
+		\node [place] (ST1_1) [left=of M, yshift=15pt] {}
+			edge [post] (M);
+		\node [place] (ST2_1) [left=of ST1_1, yshift=10pt] {}
+			edge [post] (ST1_1);
+		\node [place] (ST2_2) [left=of ST1_1, yshift=-10pt] {}
+			edge [post] (ST1_1);
+		\node [place] (ST1_2) [left=of M, yshift=-15pt] {}
+			edge [post] (M);
+		\node [place] (ST2_3) [left=of ST1_2] {}
+			edge [post] (ST1_2);
+		\node [place] (D1) [right=of M, yshift=-20pt] {}
+			edge [pre] (M);
+		\node [place] (R1) [right=of D1, yshift=-10pt] {}
+			edge [pre] (D1);
+		\node [place] (R2) [right=of D1, yshift=10pt] {}
+			edge [pre] (D1);
+		\node [place] (D2) [right=of M, yshift=20pt] {}
+			edge [pre] (M);
+		\node [place] (R3) [right=of D2, yshift=-10pt] {}
+			edge [pre] (D2);
+		\node [place] (R24) [right=of D2, yshift=10pt] {}
+			edge [pre] (D2);
 	\end{tikzpicture}
 \end{figure}
 

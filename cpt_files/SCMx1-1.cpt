@@ -1,19 +1,36 @@
 \subsubsection{Network Model}\topline
-^^I
+
 \begin{figure}[H]
 ^^I\centering
-^^I^^I\begin{tikzpicture}
-^^I^^I\SetGraphUnit{3}
-^^I^^I\Vertex{B}
-^^I^^I\WE(B){A}
-^^I^^I\EA(B){C}
-^^I^^I\Edge[label = Materials](A)(B)
-^^I^^I\Edge[label = Products](B)(C)
-^^I^^I\Edge[label = Cash](C)(B)
-^^I^^I\Edge[label = Cash](B)(A)
-^^I^^I\tikzset{EdgeStyle/.append style = {bend left = 50}}
-^^I^^I\Edge[label = Information](A)(C)
-^^I^^I\Edge[label = Information](C)(A)
+^^I\begin{tikzpicture}
+^^I^^I[node distance=1cm,on grid,>={Stealth[length=1mm]},bend angle=45,auto,
+^^I^^Ievery place/.style= {minimum size=3mm,thick,draw=none,shading=ball, ball color=BrickRed!75},
+^^I^^Ievery transition/.style={thick,draw=black!75,fill=black!20},
+^^I^^Ired place/.style= {place,draw=red!75,fill=red!20},
+^^I^^Ievery label/.style= {red}]
+^^I^^I\node [place] (M) {};
+^^I^^I\node [place] (ST1_1) [left=of M, yshift=15pt] {}
+^^I^^I^^Iedge [post] (M);
+^^I^^I\node [place] (ST2_1) [left=of ST1_1, yshift=10pt] {}
+^^I^^I^^Iedge [post] (ST1_1);
+^^I^^I\node [place] (ST2_2) [left=of ST1_1, yshift=-10pt] {}
+^^I^^I^^Iedge [post] (ST1_1);
+^^I^^I\node [place] (ST1_2) [left=of M, yshift=-15pt] {}
+^^I^^I^^Iedge [post] (M);
+^^I^^I\node [place] (ST2_3) [left=of ST1_2] {}
+^^I^^I^^Iedge [post] (ST1_2);
+^^I^^I\node [place] (D1) [right=of M, yshift=-20pt] {}
+^^I^^I^^Iedge [pre] (M);
+^^I^^I\node [place] (R1) [right=of D1, yshift=-10pt] {}
+^^I^^I^^Iedge [pre] (D1);
+^^I^^I\node [place] (R2) [right=of D1, yshift=10pt] {}
+^^I^^I^^Iedge [pre] (D1);
+^^I^^I\node [place] (D2) [right=of M, yshift=20pt] {}
+^^I^^I^^Iedge [pre] (M);
+^^I^^I\node [place] (R3) [right=of D2, yshift=-10pt] {}
+^^I^^I^^Iedge [pre] (D2);
+^^I^^I\node [place] (R24) [right=of D2, yshift=10pt] {}
+^^I^^I^^Iedge [pre] (D2);
 ^^I\end{tikzpicture}
 \end{figure}
 
