@@ -3,34 +3,48 @@
 \begin{figure}[H]
 ^^I\centering
 ^^I\begin{tikzpicture}
-^^I^^I[node distance=1cm,on grid,>={Stealth[length=1mm]},bend angle=45,auto,
-^^I^^Ievery place/.style= {minimum size=3mm,thick,draw=none,shading=ball, ball color=BrickRed!75},
-^^I^^Ievery transition/.style={thick,draw=black!75,fill=black!20},
-^^I^^Ired place/.style= {place,draw=red!75,fill=red!20},
-^^I^^Ievery label/.style= {red}]
-^^I^^I\node [place] (M) {};
-^^I^^I\node [place] (ST1_1) [left=of M, yshift=15pt] {}
-^^I^^I^^Iedge [post] (M);
-^^I^^I\node [place] (ST2_1) [left=of ST1_1, yshift=10pt] {}
-^^I^^I^^Iedge [post] (ST1_1);
-^^I^^I\node [place] (ST2_2) [left=of ST1_1, yshift=-10pt] {}
-^^I^^I^^Iedge [post] (ST1_1);
-^^I^^I\node [place] (ST1_2) [left=of M, yshift=-15pt] {}
-^^I^^I^^Iedge [post] (M);
-^^I^^I\node [place] (ST2_3) [left=of ST1_2] {}
-^^I^^I^^Iedge [post] (ST1_2);
-^^I^^I\node [place] (D1) [right=of M, yshift=-20pt] {}
-^^I^^I^^Iedge [pre] (M);
-^^I^^I\node [place] (R1) [right=of D1, yshift=-10pt] {}
-^^I^^I^^Iedge [pre] (D1);
-^^I^^I\node [place] (R2) [right=of D1, yshift=10pt] {}
-^^I^^I^^Iedge [pre] (D1);
-^^I^^I\node [place] (D2) [right=of M, yshift=20pt] {}
-^^I^^I^^Iedge [pre] (M);
-^^I^^I\node [place] (R3) [right=of D2, yshift=-10pt] {}
-^^I^^I^^Iedge [pre] (D2);
-^^I^^I\node [place] (R24) [right=of D2, yshift=10pt] {}
-^^I^^I^^Iedge [pre] (D2);
+^^I^^I[node distance=35pt,on grid,
+^^I^^IBrickRed, thick,
+^^I^^Ievery place/.style= {minimum size=2.5mm,draw=BrickRed,fill=BrickRed!75},
+^^I^^Isup place/.style= {place,draw=BrickRed,fill=BrickRed!25, thin},
+^^I^^Idis place/.style= {place,draw=darkblue,fill=darkblue!25, thin},
+^^I^^Ievery label/.style= {text=BrickRed, font=\tiny}
+^^I^^I]
+^^I^^I
+^^I^^I\node [place] (M) [minimum size=4mm] {};
+
+^^I^^I\node [sup place] (ST1_1) [left=of M, yshift=20pt, minimum size=3mm] {} edge [BrickRed, thick] (M);
+^^I^^I^^I\node [sup place] (ST2_1) [left=of ST1_1, yshift=18pt] {} edge [dashed, thin] (ST1_1);
+^^I^^I^^I\node [sup place] (ST2_2) [left=of ST1_1, yshift=9pt] {} edge [BrickRed] (ST1_1);
+^^I^^I^^I\node [sup place] (ST2_3) [left=of ST1_1, yshift=0pt] {} edge [dashed, thin] (ST1_1);
+^^I^^I\node [sup place] (ST1_2) [left=of M, minimum size=3mm] {} edge [BrickRed, thick] (M);
+^^I^^I^^I\node [sup place] (ST2_4) [left=of ST1_2, yshift=9pt] {} edge [dashed, thin] (ST1_2);
+^^I^^I^^I\node [sup place] (ST2_5) [left=of ST1_2, yshift=0pt] {} edge [dashed, thin] (ST1_2);
+^^I^^I^^I\node [sup place] (ST2_6) [left=of ST1_2, yshift=-9pt] {} edge [dashed, thin] (ST1_2);
+^^I^^I\node [sup place] (ST1_3) [left=of M, , yshift=-20pt, minimum size=3mm] {} edge [BrickRed, thick] (M);
+^^I^^I^^I\node [sup place] (ST2_7) [left=of ST1_3, yshift=0pt] {} edge [dashed, thin] (ST1_3);
+^^I^^I^^I\node [sup place] (ST2_8) [left=of ST1_3, yshift=-9pt] {} edge [thin, black, dotted] (ST1_3);
+^^I^^I^^I\node [sup place] (ST2_9) [left=of ST1_3, yshift=-18pt] {} edge [thin, black, dotted] (ST1_3);
+^^I^^I
+^^I^^I\node [dis place] (D1) [right=of M, yshift=20pt, minimum size=3mm] {} edge [darkblue] (M);
+^^I^^I^^I\node [dis place] (R1) [right=of D1, yshift=18pt] {} edge [darkblue, dashed, thin] (D1);
+^^I^^I^^I\node [dis place] (R2) [right=of D1, yshift=9pt] {} edge [darkblue] (D1);
+^^I^^I^^I\node [dis place] (R3) [right=of D1, yshift=0pt] {} edge [darkblue, dashed, thin] (D1);
+^^I^^I\node [dis place] (D2) [right=of M, minimum size=3mm] {} edge [darkblue] (M);
+^^I^^I^^I\node [dis place] (R4) [right=of D2, yshift=9pt] {} edge [darkblue] (D2);
+^^I^^I^^I\node [dis place] (R5) [right=of D2, yshift=0pt] {} edge [darkblue] (D2);
+^^I^^I^^I\node [dis place] (R6) [right=of D2, yshift=-9pt] {} edge [darkblue, dashed, thin] (D2);
+^^I^^I\node [dis place] (D3) [right=of M, yshift=-20pt, minimum size=3mm] {} edge [darkblue] (M);
+^^I^^I^^I\node [dis place] (R7) [right=of D3, yshift=0pt] {} edge [darkblue, dashed, thin] (D3);
+^^I^^I^^I\node [dis place] (R8) [right=of D3, yshift=-9pt] {} edge [darkblue] (D3);
+^^I^^I^^I\node [dis place] (R9) [right=of D3, yshift=-18pt] {} edge [darkblue, dashed, thin] (D3);
+^^I
+^^I^^I\node (L) [above=of M, yshift=5pt, label={[align=left]Focal\\Company}] {};
+^^I^^I\node (L2) [left=of L, label={[align=left]Tier 1\\Suppliers}] {};
+^^I^^I\node (L3) [left=of L2, label={[align=left]Tier 2\\Suppliers}] {};
+^^I^^I\node (L4) [right=of L, label={[align=left,text=darkblue]Tier 1\\Customers}] {};
+^^I^^I\node (L5) [right=of L4, label={[align=left,text=darkblue]Tier 2\\Customers}] {};
+
 ^^I\end{tikzpicture}
 \end{figure}
 

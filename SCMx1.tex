@@ -1,4 +1,4 @@
-\documentclass[fontsize=8pt,paper=a4,paper=landscape,twoside=false,parskip=half,
+\documentclass[fontsize=8pt,twoside=false,parskip=half,
 headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 
 % Packages que conozco
@@ -18,7 +18,7 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \usepackage{subcaption} % Para poner figuras al lado de las otras
 
 % Configuración de algunos packages que conozco
-\geometry{paper=a4paper,landscape, left=6mm,right=6mm, top=6mm,bottom=4mm}
+\geometry{paper=legalpaper,landscape, left=6mm,right=6mm, top=6mm,bottom=4mm}
 
 % Otros packages
 %\usepackage{cmbright}
@@ -262,34 +262,48 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		[node distance=1cm,on grid,>={Stealth[length=1mm]},bend angle=45,auto,
-		every place/.style= {minimum size=3mm,thick,draw=none,shading=ball, ball color=BrickRed!75},
-		every transition/.style={thick,draw=black!75,fill=black!20},
-		red place/.style= {place,draw=red!75,fill=red!20},
-		every label/.style= {red}]
-		\node [place] (M) {};
-		\node [place] (ST1_1) [left=of M, yshift=15pt] {}
-			edge [post] (M);
-		\node [place] (ST2_1) [left=of ST1_1, yshift=10pt] {}
-			edge [post] (ST1_1);
-		\node [place] (ST2_2) [left=of ST1_1, yshift=-10pt] {}
-			edge [post] (ST1_1);
-		\node [place] (ST1_2) [left=of M, yshift=-15pt] {}
-			edge [post] (M);
-		\node [place] (ST2_3) [left=of ST1_2] {}
-			edge [post] (ST1_2);
-		\node [place] (D1) [right=of M, yshift=-20pt] {}
-			edge [pre] (M);
-		\node [place] (R1) [right=of D1, yshift=-10pt] {}
-			edge [pre] (D1);
-		\node [place] (R2) [right=of D1, yshift=10pt] {}
-			edge [pre] (D1);
-		\node [place] (D2) [right=of M, yshift=20pt] {}
-			edge [pre] (M);
-		\node [place] (R3) [right=of D2, yshift=-10pt] {}
-			edge [pre] (D2);
-		\node [place] (R24) [right=of D2, yshift=10pt] {}
-			edge [pre] (D2);
+		[node distance=35pt,on grid,
+		BrickRed, thick,
+		every place/.style= {minimum size=2.5mm,draw=BrickRed,fill=BrickRed!75},
+		sup place/.style= {place,draw=BrickRed,fill=BrickRed!25, thin},
+		dis place/.style= {place,draw=darkblue,fill=darkblue!25, thin},
+		every label/.style= {text=BrickRed, font=\tiny}
+		]
+		
+		\node [place] (M) [minimum size=4mm] {};
+
+		\node [sup place] (ST1_1) [left=of M, yshift=20pt, minimum size=3mm] {} edge [BrickRed, thick] (M);
+			\node [sup place] (ST2_1) [left=of ST1_1, yshift=18pt] {} edge [dashed, thin] (ST1_1);
+			\node [sup place] (ST2_2) [left=of ST1_1, yshift=9pt] {} edge [BrickRed] (ST1_1);
+			\node [sup place] (ST2_3) [left=of ST1_1, yshift=0pt] {} edge [dashed, thin] (ST1_1);
+		\node [sup place] (ST1_2) [left=of M, minimum size=3mm] {} edge [BrickRed, thick] (M);
+			\node [sup place] (ST2_4) [left=of ST1_2, yshift=9pt] {} edge [dashed, thin] (ST1_2);
+			\node [sup place] (ST2_5) [left=of ST1_2, yshift=0pt] {} edge [dashed, thin] (ST1_2);
+			\node [sup place] (ST2_6) [left=of ST1_2, yshift=-9pt] {} edge [dashed, thin] (ST1_2);
+		\node [sup place] (ST1_3) [left=of M, , yshift=-20pt, minimum size=3mm] {} edge [BrickRed, thick] (M);
+			\node [sup place] (ST2_7) [left=of ST1_3, yshift=0pt] {} edge [dashed, thin] (ST1_3);
+			\node [sup place] (ST2_8) [left=of ST1_3, yshift=-9pt] {} edge [thin, black, dotted] (ST1_3);
+			\node [sup place] (ST2_9) [left=of ST1_3, yshift=-18pt] {} edge [thin, black, dotted] (ST1_3);
+		
+		\node [dis place] (D1) [right=of M, yshift=20pt, minimum size=3mm] {} edge [darkblue] (M);
+			\node [dis place] (R1) [right=of D1, yshift=18pt] {} edge [darkblue, dashed, thin] (D1);
+			\node [dis place] (R2) [right=of D1, yshift=9pt] {} edge [darkblue] (D1);
+			\node [dis place] (R3) [right=of D1, yshift=0pt] {} edge [darkblue, dashed, thin] (D1);
+		\node [dis place] (D2) [right=of M, minimum size=3mm] {} edge [darkblue] (M);
+			\node [dis place] (R4) [right=of D2, yshift=9pt] {} edge [darkblue] (D2);
+			\node [dis place] (R5) [right=of D2, yshift=0pt] {} edge [darkblue] (D2);
+			\node [dis place] (R6) [right=of D2, yshift=-9pt] {} edge [darkblue, dashed, thin] (D2);
+		\node [dis place] (D3) [right=of M, yshift=-20pt, minimum size=3mm] {} edge [darkblue] (M);
+			\node [dis place] (R7) [right=of D3, yshift=0pt] {} edge [darkblue, dashed, thin] (D3);
+			\node [dis place] (R8) [right=of D3, yshift=-9pt] {} edge [darkblue] (D3);
+			\node [dis place] (R9) [right=of D3, yshift=-18pt] {} edge [darkblue, dashed, thin] (D3);
+	
+		\node (L) [above=of M, yshift=5pt, label={[align=left]Focal\\Company}] {};
+		\node (L2) [left=of L, label={[align=left]Tier 1\\Suppliers}] {};
+		\node (L3) [left=of L2, label={[align=left]Tier 2\\Suppliers}] {};
+		\node (L4) [right=of L, label={[align=left,text=darkblue]Tier 1\\Customers}] {};
+		\node (L5) [right=of L4, label={[align=left,text=darkblue]Tier 2\\Customers}] {};
+
 	\end{tikzpicture}
 \end{figure}
 

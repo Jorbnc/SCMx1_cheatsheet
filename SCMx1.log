@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  28 SEP 2022 22:18
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  2 OCT 2022 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -42,17 +42,13 @@ Package: typearea 2022/07/04 v3.37 KOMA-Script package (type area)
 \ta@vblk=\skip50
 \ta@temp=\skip51
 \footheight=\skip52
-Package typearea Info: With paper sizes other than (almost) `A4' predefined
-(typearea)             DIV values do not exist. Using DIV calculation for good
-(typearea)             line width (unless using `version=3.24` or prior).
+
+
+Package typearea Warning: DIV for 8.0pt and used papersize
+(typearea)                not defined!
+(typearea)                Using DIV=calc.
 
 DIV calculation for typearea with good linewidth.
-Package typearea Info: Maybe no optimal type area settings!
-(typearea)             The detected line width is about 24%
-(typearea)             smaller than the heuristically estimated maximum
-(typearea)             limit of typographical good line width.
-(typearea)             You could e.g. increase DIV
-(typearea)             or change the papersize.
 
 Package typearea Warning: Very low DIV value!
 (typearea)                DIV values less than 6 result in textwidth/-height
@@ -61,16 +57,16 @@ Package typearea Warning: Very low DIV value!
 (typearea)                change papersize.
 
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 4
+(typearea)             DIV  = 5
 (typearea)             BCOR = 0.0pt
-(typearea)             \paperwidth      = 845.04694pt
-(typearea)              \textwidth      = 211.26173pt
-(typearea)              DIV departure   = 24%
-(typearea)              \evensidemargin = 244.6226pt
-(typearea)              \oddsidemargin  = 244.6226pt
-(typearea)             \paperheight     = 597.50793pt
-(typearea)              \textheight     = 150.5pt
-(typearea)              \topmargin      = 50.982pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 239.00317pt
+(typearea)              DIV departure   = 14%
+(typearea)              \evensidemargin = 106.98239pt
+(typearea)              \oddsidemargin  = 106.98239pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 340.5pt
+(typearea)              \topmargin      = 70.6144pt
 (typearea)              \headheight     = 11.875pt
 (typearea)              \headsep        = 14.25pt
 (typearea)              \topskip        = 8.0pt
@@ -497,11 +493,11 @@ File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the K
 )
 
 Package geometry Warning: Over-specification in `h'-direction.
-    `width' (211.26173pt) is ignored.
+    `width' (239.00317pt) is ignored.
 
 
 Package geometry Warning: Over-specification in `v'-direction.
-    `height' (150.5pt) is ignored.
+    `height' (340.5pt) is ignored.
 
 (C:\MikTex\tex/latex/bera\beramono.sty
 Package: beramono 2004/01/31 (WaS)
@@ -1369,16 +1365,16 @@ Package scrbase Info: activating english \indexname on input line 249.
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
 * driver: xetex
-* paper: a4paper
+* paper: legalpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
-* h-part:(L,W,R)=(17.07164pt, 810.90356pt, 17.07164pt)
-* v-part:(T,H,B)=(17.07164pt, 569.05515pt, 11.38109pt)
-* \paperwidth=845.04684pt
-* \paperheight=597.50787pt
-* \textwidth=810.90356pt
-* \textheight=569.05515pt
+* h-part:(L,W,R)=(17.07164pt, 977.63672pt, 17.07164pt)
+* v-part:(T,H,B)=(17.07164pt, 585.84227pt, 11.38109pt)
+* \paperwidth=1011.78pt
+* \paperheight=614.295pt
+* \textwidth=977.63672pt
+* \textheight=585.84227pt
 * \oddsidemargin=-55.19835pt
 * \evensidemargin=-55.19835pt
 * \topmargin=-81.32335pt
@@ -1386,7 +1382,7 @@ Package scrbase Info: activating english \indexname on input line 249.
 * \headsep=14.25pt
 * \topskip=8.0pt
 * \footskip=33.25pt
-* \marginparwidth=211.26173pt
+* \marginparwidth=119.50159pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
 * \skip\footins=7.0pt plus 4.0pt minus 2.0pt
@@ -2393,45 +2389,45 @@ Package microtype Info: Character `\textquestiondown ' is missing
 (microtype)             in font `\TU/RevxNeueDemo(0)/b/n/6'.
 (microtype)             Ignoring protrusion settings for this character.
 )
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 297--298
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 311--312
 | [][][] 
  []
 
 \openout5 = `./cpt_files/SCMx1-2.cpt'.
 
 (cpt_files/SCMx1-2.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 304--305
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 318--319
 []| [][][] 
  []
 
 \openout5 = `./cpt_files/SCMx1-3.cpt'.
 
 (cpt_files/SCMx1-3.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 353--354
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 367--368
 []| [][][] 
  []
 
 \openout5 = `./cpt_files/SCMx1-4.cpt'.
 
 (cpt_files/SCMx1-4.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 359--360
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 373--374
 | [][][] 
  []
 
 
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 361--362
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 375--376
   [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 \openout5 = `./cpt_files/SCMx1-5.cpt'.
 
 (cpt_files/SCMx1-5.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 367--368
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 381--382
 | [][][] 
  []
 
@@ -2445,12 +2441,12 @@ Package logreq Info: Writing requests to 'SCMx1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56829 strings out of 410536
- 1310674 string characters out of 2820497
- 2391954 words of memory out of 3000000
- 77212 multiletter control sequences out of 15000+600000
+ 56927 strings out of 410536
+ 1311681 string characters out of 2820497
+ 2400825 words of memory out of 3000000
+ 77312 multiletter control sequences out of 15000+600000
  478079 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,14n,106p,10628b,3848s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on SCMx1.xdv (2 pages, 78208 bytes).
+Output written on SCMx1.xdv (2 pages, 97724 bytes).
