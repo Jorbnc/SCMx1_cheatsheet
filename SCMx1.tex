@@ -16,6 +16,7 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \usepackage{empheq} % Attractive Boxed Equations
 \usepackage[thinc]{esdiff} % Shorthand derivatives
 \usepackage{subcaption} % Para poner figuras al lado de las otras
+\usepackage{anyfontsize}
 
 % Configuración de algunos packages que conozco
 \geometry{paper=legalpaper,landscape, left=6mm,right=6mm, top=6mm,bottom=4mm}
@@ -310,12 +311,56 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 In a manufacturing context, a supply chain can be seen as a network of suppliers, manufacturers, distributors, and retailers.
 }
 
-\sectionbox{\subsubsection{Network Model}\topline
-EOQ formula:
+\subsection{What is Supply Chain Management?}
 
-\[ Q^* = \sqrt{\frac{ABC}{D}} \]
+\sectionbox{\subsubsection{SCM Activities}\topline
 
 }
+
+\sectionbox{\subsubsection{Product-Process Matrix/Cube}\topline
+
+}
+
+\sectionbox{\subsubsection{Customer Order Decoupling Point}\topline
+
+}
+
+\titlebox{\section{Flows}}
+
+\subsection{Materials Flow}
+
+\sectionbox{\subsubsection{Subsubtitle 2}\topline
+
+}
+
+\titlebox{\section{Inventory: Concepts \& Methods}}
+
+\subsection{Inventory}
+
+\sectionbox{\subsubsection{Different PoV: Finance/Accounting vs. Production/Logistics/SCM}\topline
+
+}
+
+
+\sectionbox{\subsubsection{Why hold inventory?}\topline
+- Cover process time \\
+- Decouple process
+}
+
+
+\sectionbox{\subsubsection{Inventory decisions}\topline
+
+}
+
+\subsection{Inventory Costs}
+
+\sectionbox{\subsubsection{Inventory Costs}\topline
+
+}
+
+\titlebox{\section{Inventory: Deterministic Models}}
+
+\subsection{EOQ}
 
 \sectionbox{\subsubsection{Flows}\topline
 \begin{figure}[H]
@@ -366,19 +411,51 @@ EOQ formula:
 \end{figure}
 }
 
-\subsection{What is Supply Chain Management?}
+\sectionbox{\subsubsection{Network Model}\topline
+EOQ formula:
 
-\sectionbox{\subsubsection{SCM Activities}\topline
+\[ Q^* = \sqrt{\frac{ABC}{D}} \]
+
+}
+
+\titlebox{\section{Appendix 1}}
+\subsection{Mathematical Functions}
+\sectionbox{\subsubsection{Linear Functions}\topline
+
+\[ f(x) = mx+b \]
+
+Cost functions of the form $f(\text{Units})=\text{Fixed Cost} + \text{Unitary Cost}*\text{Units}$
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\begin{axis}[
+				1Quad,width=3.25cm,height=3.25cm,
+				ymin=0, ymax=1000, grid=both,
+				xlabel = {distance traveled}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+				ylabel = {transportation cost}, y label style={at={(axis description cs:-0.4,.5)},rotate=90,anchor=south},
+				ticklabel style = {font=\tiny},
+				]
+		% Function
+		\addplot[blue, line width=0.25mm, domain=0:20]{500+14.5*x};
+	\end{axis}
+	\end{tikzpicture}
+	\hspace{0.25cm}
+	\begin{tikzpicture}
+	\begin{axis}[1Quad,width=3.25cm,height=3.25cm,
+				ymin=0,ymax=1000,
+				xtick={10,20,30,40,50}, grid=both,
+				xlabel = {cases stored}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+				ylabel = {warehousing cost}, y label style={at={(axis description cs:-0.4,.5)},rotate=90,anchor=south},
+				]
+		% Function
+		\addplot[red, line width=0.25mm, domain=0:50]{800+3.5*x};
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
 
 }
 
-\titlebox{\section{TITLE 2}}
-
-\subsection{Subtitle 2}
-
-\sectionbox{\subsubsection{Subsubtitle 2}\topline
-
-}
 
 \end{multicols*}
 
