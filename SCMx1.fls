@@ -1703,6 +1703,8 @@ OUTPUT .\cpt_files\SCMx1-11.cpt
 INPUT cpt_files\SCMx1-11.cpt
 OUTPUT .\cpt_files\SCMx1-12.cpt
 INPUT cpt_files\SCMx1-12.cpt
+OUTPUT .\cpt_files\SCMx1-13.cpt
+INPUT cpt_files\SCMx1-13.cpt
 OUTPUT SCMx1.xdv
 INPUT SCMx1.aux
 INPUT .\SCMx1.out

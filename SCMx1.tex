@@ -424,38 +424,88 @@ EOQ formula:
 
 \[ f(x) = mx+b \]
 
-Cost functions of the form $f(\text{Units})=\text{Fixed Cost} + \text{Unitary Cost}*\text{Units}$
+\textbf{Cost functions: } $f(\text{Level of Activity})=\text{Fixed Cost} + \text{Variable Cost}(\text{Level of Activity})$
 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-	\begin{axis}[
-				1Quad,width=3.25cm,height=3.25cm,
-				ymin=0, ymax=1000, grid=both,
-				xlabel = {distance traveled}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
-				ylabel = {transportation cost}, y label style={at={(axis description cs:-0.4,.5)},rotate=90,anchor=south},
-				ticklabel style = {font=\tiny},
-				]
-		% Function
-		\addplot[blue, line width=0.25mm, domain=0:20]{500+14.5*x};
-	\end{axis}
+		\begin{axis}[
+					1Quad,width=3.25cm,height=3.25cm,
+					ymin=0, ymax=1000, grid=both,
+					xlabel = {km traveled}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+					ylabel = {transportation cost}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south},
+					%ticklabel style = font={\fontsize{1}{1}\selectfont},
+					]
+			\addplot[blue, line width=0.25mm, domain=0:20]{500+14.5*x};
+		\end{axis}
 	\end{tikzpicture}
 	\hspace{0.25cm}
 	\begin{tikzpicture}
-	\begin{axis}[1Quad,width=3.25cm,height=3.25cm,
-				ymin=0,ymax=1000,
-				xtick={10,20,30,40,50}, grid=both,
-				xlabel = {cases stored}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
-				ylabel = {warehousing cost}, y label style={at={(axis description cs:-0.4,.5)},rotate=90,anchor=south},
-				]
-		% Function
-		\addplot[red, line width=0.25mm, domain=0:50]{800+3.5*x};
-	\end{axis}
+		\begin{axis}[1Quad,width=3.25cm,height=3.25cm,
+					ymin=0,ymax=1000,
+					xtick={10,20,30,40,50}, grid=both,
+					xlabel = {cases stored}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+					ylabel = {warehousing cost}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south},
+					]
+			\addplot[red, line width=0.25mm, domain=0:50]{800+3.5*x};
+		\end{axis}
 	\end{tikzpicture}
 \end{figure}
 
+\textbf{Linear Regressions}
+
+fig
 }
 
+\sectionbox{\subsubsection{Quadratic Functions}\topline
+
+\[ f(x) = ax^2+bx+c \]
+
+\textbf{Profit Functions: }
+
+
+\begin{figure}[H]
+	\begin{minipage}{0.5\linewidth}\centering
+		
+		\begin{tikzpicture}
+			\begin{axis}[
+						1Quad,width=3.5cm,height=3.25cm,
+						xmin = 50,
+						ymin=-60000, ymax=120000, grid=both,
+						scaled y ticks = false, scaled x ticks = false, 
+							y tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect,1000 sep={,},precision=2},
+						x tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect, 1000 sep={},precision=2},
+						xlabel = {price}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+						ylabel = {\$}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south}
+						]
+				\addplot[blue, line width=0.25mm, domain=116:208]{-80*x^2 + 26000*x - 2000000};
+			\end{axis}
+		\end{tikzpicture}
+	\end{minipage}
+	\begin{minipage}{0.5\linewidth}\centering
+		\tiny{
+		\begin{align*}
+			&V(p) = 20,000 - 80p \\
+			&R(p) = (20,000 - 80p)p \\
+			&C(p) = 500,000 + 75(20,000 - 80p) \\
+			&P(p) = R(p) - C(p)
+		\end{align*}}
+		\vfill
+	\end{minipage}
+\end{figure}
+
+% \begin{minipage}{0.5\linewidth}
+% 	\begin{align*}
+% 		Sales Volume: S(p) = 20,000 - 80p \\
+% 		Revenue: R(p) = (20,000 - 80p)p \\
+% 		Production Costs: C(p) = 500,000 + 75(20,000 - 80p) \\
+% 		Profit: P(p) = R(p) - C(p)
+% 	\end{align}
+% \end{minipage}
+
+Parcel trucking
+
+}
 
 \end{multicols*}
 
