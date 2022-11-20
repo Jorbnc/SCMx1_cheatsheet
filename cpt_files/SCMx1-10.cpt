@@ -10,11 +10,15 @@
 ^^I^^I^^I^^Iytick={\TRCopt}, yticklabels={$TRC^{*}(Q)$},
 ^^I^^I^^I^^Irestrict y to domain = 0:9500]
 ^^I^^I% Functions
-^^I^^I\addplot[blue, line width=0.15mm, domain=0:\xmax]{\ct*(\D/x)};
-^^I^^I\addplot[red, line width=0.15mm, domain=0:\xmax]{\ce*(x/2)};
+^^I^^I\addplot[darkblue, line width=0.15mm, domain=0:\xmax]{\ct*(\D/x)};
+^^I^^I\addplot[BrickRed, line width=0.15mm, domain=0:\xmax]{\ce*(x/2)};
 ^^I^^I\addplot[black, line width=0.25mm, domain=0:\xmax]{\ct*(\D/x) + \ce*(x/2)};
 ^^I^^I% Nodes
-^^I^^I\node[circle,draw=black,fill=white,inner sep=0pt,minimum size=3pt] at (660,3633){};
+^^I^^I\node[circle,draw=black,fill=white,inner sep=0pt,minimum size=3pt] at (\Qopt,\TRCopt){};
+^^I^^I% Annotations
+^^I^^I\draw (\Qopt,\TRCopt)node[above, xshift=0.5mm]{\tiny Optimal};
+^^I^^I\draw (2500,200)node[darkblue, above]{\tiny Ordering Cost};
+^^I^^I\draw (2500,4500)node[BrickRed, above]{\tiny Holding Cost};
 ^^I\end{axis}
 ^^I\end{tikzpicture}
 \end{figure}

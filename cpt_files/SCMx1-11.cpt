@@ -10,7 +10,7 @@ $Q$ units of inventory each $T$ units of time.
 ^^I^^I^^I^^I^^Iytick={0.5,1}, yticklabels={$\frac{Q}{2}$,$Q$},
 ^^I^^I^^I^^I^^I]
 ^^I^^I^^I% Sawtooth
-^^I^^I^^I\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [blue, line width=0.2mm];
+^^I^^I^^I\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [darkblue, line width=0.2mm];
 ^^I^^I^^I\draw (0,0.5) -- (\lastx,0.5) [cyan, dashed, line width=0.02mm];
 ^^I^^I^^I\draw [pen colour={annot},decorate,decoration={calligraphic brace,mirror,amplitude=5pt,raise=2pt},xshift=0pt,yshift=0pt]
 ^^I^^I^^I(0,0) -- (1,0) node [annot,midway,yshift=-12.5pt, line width=5mm] {\tiny $T=\frac{Q}{D}$};

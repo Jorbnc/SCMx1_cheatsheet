@@ -424,11 +424,15 @@ In a manufacturing context, a supply chain can be seen as a network of suppliers
 				ytick={\TRCopt}, yticklabels={$TRC^{*}(Q)$},
 				restrict y to domain = 0:9500]
 		% Functions
-		\addplot[blue, line width=0.15mm, domain=0:\xmax]{\ct*(\D/x)};
-		\addplot[red, line width=0.15mm, domain=0:\xmax]{\ce*(x/2)};
+		\addplot[darkblue, line width=0.15mm, domain=0:\xmax]{\ct*(\D/x)};
+		\addplot[BrickRed, line width=0.15mm, domain=0:\xmax]{\ce*(x/2)};
 		\addplot[black, line width=0.25mm, domain=0:\xmax]{\ct*(\D/x) + \ce*(x/2)};
 		% Nodes
-		\node[circle,draw=black,fill=white,inner sep=0pt,minimum size=3pt] at (660,3633){};
+		\node[circle,draw=black,fill=white,inner sep=0pt,minimum size=3pt] at (\Qopt,\TRCopt){};
+		% Annotations
+		\draw (\Qopt,\TRCopt)node[above, xshift=0.5mm]{\tiny Optimal};
+		\draw (2500,200)node[darkblue, above]{\tiny Ordering Cost};
+		\draw (2500,4500)node[BrickRed, above]{\tiny Holding Cost};
 	\end{axis}
 	\end{tikzpicture}
 \end{figure}
@@ -446,7 +450,7 @@ $Q$ units of inventory each $T$ units of time.
 					ytick={0.5,1}, yticklabels={$\frac{Q}{2}$,$Q$},
 					]
 			% Sawtooth
-			\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [blue, line width=0.2mm];
+			\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [darkblue, line width=0.2mm];
 			\draw (0,0.5) -- (\lastx,0.5) [cyan, dashed, line width=0.02mm];
 			\draw [pen colour={annot},decorate,decoration={calligraphic brace,mirror,amplitude=5pt,raise=2pt},xshift=0pt,yshift=0pt]
 			(0,0) -- (1,0) node [annot,midway,yshift=-12.5pt, line width=5mm] {\tiny $T=\frac{Q}{D}$};
