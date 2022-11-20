@@ -1,4 +1,5 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'SCMx1.blg'
-[173] biber-MSWIN64:340> INFO - === 
-[232] Biber.pm:418> INFO - Reading 'SCMx1.bcf'
+[150] biber-MSWIN64:340> INFO - === 
+[618] Utils.pm:410> ERROR - Cannot find control file 'SCMx1.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[618] Biber.pm:135> INFO - ERRORS: 1

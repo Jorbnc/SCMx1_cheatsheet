@@ -42,7 +42,8 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 		positioning,
 		arrows.meta,
 		petri,
-		positioning
+		positioning,
+		calligraphy
 	}
 	\pgfplotsset{
 		compat=1.16,
@@ -169,7 +170,8 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 \usepackage{hyperref}
 \renewcommand{\subsectionautorefname}{section}
 
-\definecolor{darkblue}{RGB}{0, 82, 147}		
+\definecolor{darkblue}{RGB}{0, 82, 147}
+\definecolor{annot}{RGB}{52, 135, 10}		
 \hypersetup{
 	pdfcreator={LaTeX2e},
 	pdfborder=0 0 0,
@@ -238,6 +240,9 @@ headings=small,numbers=withenddot,usegeometry=true,english]{scrartcl}
 % Macros y Nuevos comandos
 \newcommand{\topline}{\vspace{2pt}{\color{Gray!80}\hrule}\vspace{3pt}}
 \renewcommand{\qedsymbol}{$\blacksquare$}
+\pgfplotsset{hide scale/.style={ /pgfplots/xtick scale label code/.code={}, 
+								 /pgfplots/ytick scale label code/.code={}}
+}
 
 
 % Distancia antes y después de cada {figure}
@@ -337,7 +342,7 @@ In a manufacturing context, a supply chain can be seen as a network of suppliers
 
 \subsection{Inventory}
 
-\sectionbox{\subsubsection{Different PoV: Finance/Accounting vs. Production/Logistics/SCM}\topline
+\sectionbox{\subsubsection{Accouting PoV vs. Logistics/SCM PoV}\topline
 
 }
 
@@ -355,14 +360,6 @@ In a manufacturing context, a supply chain can be seen as a network of suppliers
 \subsection{Inventory Costs}
 
 \sectionbox{\subsubsection{Inventory Costs}\topline
-
-}
-
-\titlebox{\section{Inventory: Deterministic Models}}
-
-\subsection{EOQ}
-
-\sectionbox{\subsubsection{Flows}\topline
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
@@ -411,7 +408,58 @@ In a manufacturing context, a supply chain can be seen as a network of suppliers
 \end{figure}
 }
 
-\sectionbox{\subsubsection{Network Model}\topline
+\titlebox{\section{Inventory: Deterministic Models}}
+
+\subsection{EOQ}
+
+\sectionbox{\subsubsection{Total Relevant Cost}\topline
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+	\tikzmath{\ce=5.5; \ct=400; \D=3000; \xmax=3000; \Qopt=660; \TRCopt=3633.18;}
+	\begin{axis}[1Quad, width=6cm, height=4cm, hide scale,
+				ymin=0, ymax=10000, xmin=0, xmax=\xmax,
+				xtick={\Qopt}, xticklabels={$Q^*$},
+				ytick={\TRCopt}, yticklabels={$TRC^{*}(Q)$},
+				restrict y to domain = 0:9500]
+		% Functions
+		\addplot[blue, line width=0.15mm, domain=0:\xmax]{\ct*(\D/x)};
+		\addplot[red, line width=0.15mm, domain=0:\xmax]{\ce*(x/2)};
+		\addplot[black, line width=0.25mm, domain=0:\xmax]{\ct*(\D/x) + \ce*(x/2)};
+		% Nodes
+		\node[circle,draw=black,fill=white,inner sep=0pt,minimum size=3pt] at (660,3633){};
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
+}
+
+\sectionbox{\subsubsection{EOQ plot}\topline
+$Q$ units of inventory each $T$ units of time.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\tikzmath{\lastx = 5;}
+		\begin{axis}[1Quad,width=9cm,height=3.25cm,ymin=0,ymax=1.3,xmin=0,xmax=5.25,
+					xtick style={draw=none}, xticklabels={,,},
+					ytick={0.5,1}, yticklabels={$\frac{Q}{2}$,$Q$},
+					]
+			% Sawtooth
+			\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [blue, line width=0.2mm];
+			\draw (0,0.5) -- (\lastx,0.5) [cyan, dashed, line width=0.02mm];
+			\draw [pen colour={annot},decorate,decoration={calligraphic brace,mirror,amplitude=5pt,raise=2pt},xshift=0pt,yshift=0pt]
+			(0,0) -- (1,0) node [annot,midway,yshift=-12.5pt, line width=5mm] {\tiny $T=\frac{Q}{D}$};
+		\end{axis}
+		\end{tikzpicture}
+\end{figure}
+
+
+Some text here
+
+}
+
+\sectionbox{\subsubsection{EOQ formula derivation}\topline
 EOQ formula:
 
 \[ Q^* = \sqrt{\frac{ABC}{D}} \]
@@ -433,7 +481,7 @@ EOQ formula:
 					1Quad,width=3.25cm,height=3.25cm,
 					ymin=0, ymax=1000, grid=both,
 					xlabel = {km traveled}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
-					ylabel = {transportation cost}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south},
+					ylabel = {transportation cost}, y label style={at={(axis description cs:-0.45,.5)},rotate=90,anchor=south},
 					%ticklabel style = font={\fontsize{1}{1}\selectfont},
 					]
 			\addplot[blue, line width=0.25mm, domain=0:20]{500+14.5*x};
@@ -445,7 +493,7 @@ EOQ formula:
 					ymin=0,ymax=1000,
 					xtick={10,20,30,40,50}, grid=both,
 					xlabel = {cases stored}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
-					ylabel = {warehousing cost}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south},
+					ylabel = {warehousing cost}, y label style={at={(axis description cs:-0.45,.5)},rotate=90,anchor=south},
 					]
 			\addplot[red, line width=0.25mm, domain=0:50]{800+3.5*x};
 		\end{axis}
@@ -461,7 +509,7 @@ fig
 
 \[ f(x) = ax^2+bx+c \]
 
-\textbf{Profit Functions: }
+\textbf{Profit: }
 
 
 \begin{figure}[H]
@@ -473,7 +521,7 @@ fig
 						xmin = 50,
 						ymin=-60000, ymax=120000, grid=both,
 						scaled y ticks = false, scaled x ticks = false, 
-							y tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect,1000 sep={,},precision=2},
+						y tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect,1000 sep={,},precision=2},
 						x tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect, 1000 sep={},precision=2},
 						xlabel = {price}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
 						ylabel = {\$}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south}
@@ -494,16 +542,34 @@ fig
 	\end{minipage}
 \end{figure}
 
-% \begin{minipage}{0.5\linewidth}
-% 	\begin{align*}
-% 		Sales Volume: S(p) = 20,000 - 80p \\
-% 		Revenue: R(p) = (20,000 - 80p)p \\
-% 		Production Costs: C(p) = 500,000 + 75(20,000 - 80p) \\
-% 		Profit: P(p) = R(p) - C(p)
-% 	\end{align}
-% \end{minipage}
 
-Parcel trucking
+\textbf{Parcel trucking}
+
+\begin{figure}[H]
+	\begin{minipage}{0.5\linewidth}\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+						1Quad,width=3.5cm,height=3.25cm,
+						ymin=-0, ymax=60, grid=both,
+						scaled y ticks = false, scaled x ticks = false,
+						xtick={250, 500, 750, 1000},
+						y tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect,1000 sep={,},precision=2},
+						x tick label style={/pgf/number format/.cd, fixed, fixed zerofill, int detect, 1000 sep={},precision=2},
+						xlabel = {weight}, x label style={at={(axis description cs:0.5,-0.2)}, anchor=north},
+						ylabel = {cost of order}, y label style={at={(axis description cs:-0.35,.5)},rotate=90,anchor=south}
+						]
+				\addplot[blue, line width=0.25mm, domain=0:1000]{33 + 0.067*x - 0.00005*x^2};
+			\end{axis}
+		\end{tikzpicture}
+	\end{minipage}
+	\begin{minipage}{0.5\linewidth}\centering
+		\tiny{
+		\begin{align*}
+			&f(w) = 33 + 0.067w - 0.00005w^2
+		\end{align*}}
+		\vfill
+	\end{minipage}
+\end{figure}
 
 }
 
