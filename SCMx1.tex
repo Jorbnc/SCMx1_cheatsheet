@@ -382,32 +382,13 @@ Procurement activities have influence on the Purchase Cost, while Inventory Mana
 
 \titlebox{\section{Inventory: Deterministic Models}}
 
-\subsection{EOQ}
+\subsection{EOQ: Economic Order Quantity}
 
-\sectionbox{\subsubsection{EOQ plot}\topline
-$Q$ units of inventory each $T$ units of time.
-
-Senalar (annotate) la demanda como ratio/pendiente, el nivel Q y Q/2, etc ---> OneNote 4.2. EOQ
-
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\tikzmath{\lastx = 5;}
-		\begin{axis}[1Quad,width=9cm,height=3.25cm,ymin=0,ymax=1.3,xmin=0,xmax=\lastx + 0.25,
-					xtick style={draw=none}, xticklabels={,,},
-					ytick={0.5,1}, yticklabels={,,}
-					]
-			% Sawtooth
-			\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [blue, line width=0.2mm];
-			\draw (0,0.5) -- (\lastx,0.5) [darkblue, dashed, line width=0.02mm];
-			\draw [pen colour={annot},decorate,decoration={calligraphic brace,mirror,amplitude=5pt,raise=2pt},xshift=0pt,yshift=0pt]
-			(0,0) -- (1,0) node [annot,midway,yshift=-12.5pt, line width=5mm] {\tiny $T=\frac{Q}{D}$};
-		\end{axis}
-		\end{tikzpicture}
-\end{figure}
-
-Some text here
-
+\sectionbox{\subsubsection{EOQ model assumptions}\topline
+\begin{itemize}
+	\item Known demand $\rightarrow$ Constant
+	\item Zero or Constant Lead Time
+\end{itemize}
 }
 
 \sectionbox{\subsubsection{EOQ formula derivation}\topline
@@ -452,11 +433,38 @@ The $EOQ$ or $Q^*$ gives the minimum Total Relevant Cost under deterministic con
 \end{figure}
 }
 
-\sectionbox{\subsubsection{EOQ formula derivation}\topline
-EOQ formula:
+\sectionbox{\subsubsection{EOQ sawtooth plot}\topline
+The optimal policy becomes ordering $Q^*$ units of inventory every $T^*$ units of time.
 
-\[ Q^* = \sqrt{\frac{ABC}{D}} \]
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\tikzmath{\lastx = 5;}
+		\begin{axis}[1Quad,width=9cm,height=3.25cm,ymin=0,ymax=1.3,xmin=0,xmax=\lastx + 0.25,
+					xtick style={draw=none}, xtick={\lastx-0.5}, xticklabels={1 Year},
+					ytick={0.5,1}, yticklabels={,,}
+					]
+			% Sawtooth
+			\draw (0,0) foreach \x in {1,...,\lastx} {-- ++(0,1) -- ++(1,-1)} [blue, line width=0.2mm];
+			\draw (0,0.5) -- (\lastx,0.5) [darkblue, dashed, line width=0.02mm];
+			\draw [pen colour={annot},decorate,decoration={calligraphic brace,mirror,amplitude=5pt,raise=2pt},xshift=0pt,yshift=0pt]
+			(1,0) -- (2,0) node [annot,midway,yshift=-12.5pt, line width=5mm] {\tiny $T^*=\frac{Q^*}{D}$};
+			\draw (0,1) node[annot, left]{\tiny $Q^*$};
+			\draw (0,0.5) node[annot, left]{\tiny $\frac{Q^*}{2}$};
+			\draw (0.45,0.6) node[annot, above]{\tiny $D$};
+		\end{axis}
+		\end{tikzpicture}
+\end{figure}
 
+Notice that the total consumption of the last order may take place after the 1 year (unit time) period.
+
+}
+
+\sectionbox{\subsubsection{Sensitivity Analysis for the EOQ model}\topline
+Resaltar que, pese a que algunos parametros se asumen alegremente como deterministicos, el modelo es lo suficientemente
+robusto como para compensar variaciones en los mismos (e.g. demanda, costos, etc.)\\
+
+Usar los 5 libros en ...Analisis y logistica de la produccion + otros complementos
 }
 
 \titlebox{\section{Appendix 1}}
@@ -569,7 +577,26 @@ fig
 \end{multicols*}
 
 \newpage
-
-Holass
+\textbf{REFERENCES}\\
+\textbf{Inventory Management I:}
+\begin{enumerate}
+	\item Operations, Logistics and Supply Chain Management - Sunderesh S. Heragu et al. (2019)
+	\item Supply Chain Management. Strategy, Planning and Operation (6th ed.) - S. Chopra \& P. Meindl (2016)
+	\item Designing \& Managing the Supply Chain (4th ed.) - D. Simchi-Levi et al. (2021)
+	\item Distribution Planning and Control (3rd ed) - David F. Ross (2015) [Ch. 7]
+	\item Logistics of Production and Inventory - Graves, Rinnooy, Zipkin (eds.) (1993)
+	\item Matching Supply with Demand (4th ed.) - Gerard Cachon \& Christian Terwiesch (2019)
+	\item Production and Operations Analysis (7th ed.) - Steven Nahmias \& Tava Lennon Olsen (2015)
+	\item Building Intuition. Insights from Basic Operations Management Models and Principles - Chhajed \& Lowe (eds) (2008)
+	\item Managing Business Process Flows (3rd ed) - Anupindi, Chopra, Deshmukh et al. (2012)
+	\item Factory Physics (3rd ed.) - Wallace Hopp \& Mark Spearman (2011)
+	\item Inventory Control. Models and Methods - Dieter Bartmann \& Martin J. Beckmann (1992)
+	\item Inventory Control. Theory and Practice - Starr \& Miller (1962)
+	\item Production and Inventory Control. Theory and Practice - van Hees \& Monhemius (1972)
+	\item Inventory and Production Management in Supply Chains (4th ed.) - Silver, Pyke \& Thomas (2017)
+	\item Inventarios. Manejo y Control - Humberto Guerrero Salas (2009)
+	\item Principles of Inventory Management -  John A. Muckstadt \& Amar Sapra (2010)
+	\item Handbook of EOQ Inventory Problems. Stochastic and Deterministic Models and Applications - Tsan-Ming Choi (ed.) (2014)
+\end{enumerate}
 
 \end{document}

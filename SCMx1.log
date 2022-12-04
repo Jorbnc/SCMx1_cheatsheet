@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  20 NOV 2022 21:16
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.8.28) (preloaded format=xelatex 2022.9.25)  27 NOV 2022 18:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2544,44 +2544,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--384
 \openout5 = `./cpt_files/SCMx1-10.cpt'.
 
 (cpt_files/SCMx1-10.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 411--412
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 392--393
 | [][][] 
  []
 
 \openout5 = `./cpt_files/SCMx1-11.cpt'.
 
 (cpt_files/SCMx1-11.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 453--454
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 434--435
 []| [][][] 
  []
 
 \openout5 = `./cpt_files/SCMx1-12.cpt'.
 
 (cpt_files/SCMx1-12.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 460--461
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 461--462
 []| [][][] 
- []
-
-
-Overfull \hbox (1.63333pt too wide) in paragraph at lines 462--463
-[]  [][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-
  []
 
 \openout5 = `./cpt_files/SCMx1-13.cpt'.
 
 (cpt_files/SCMx1-13.cpt)
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 499--500
-| [][][] 
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 468--469
+[]| [][][] 
+ []
+
+
+Overfull \hbox (1.63333pt too wide) in paragraph at lines 470--471
+[]  [][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+
  []
 
 \openout5 = `./cpt_files/SCMx1-14.cpt'.
 
-(cpt_files/SCMx1-14.cpt
+(cpt_files/SCMx1-14.cpt)
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 507--508
+| [][][] 
+ []
+
+\openout5 = `./cpt_files/SCMx1-15.cpt'.
+
+(cpt_files/SCMx1-15.cpt
 Overfull \hbox (1.33334pt too wide) in paragraph at lines 9--36
 []$[]$ $[]$ 
  []
@@ -2592,13 +2599,44 @@ Overfull \hbox (1.33334pt too wide) in paragraph at lines 42--65
  []
 
 )
-Overfull \hbox (10.04999pt too wide) in paragraph at lines 567--568
+Overfull \hbox (10.04999pt too wide) in paragraph at lines 575--576
 []| [][][] 
  []
 
 [1
 
-] [2] (SCMx1.aux)
+]
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/RevxNeueDemo(0)/b/n/8'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2] (SCMx1.aux)
 Package rerunfilecheck Info: File `SCMx1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'SCMx1.run.xml'.
@@ -2606,12 +2644,12 @@ Package logreq Info: Writing requests to 'SCMx1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58184 strings out of 410536
- 1341777 string characters out of 2820497
- 2477004 words of memory out of 3000000
- 78532 multiletter control sequences out of 15000+600000
- 478087 words of font info for 74 fonts, out of 8000000 for 9000
+ 58203 strings out of 410536
+ 1342192 string characters out of 2820497
+ 2481004 words of memory out of 3000000
+ 78546 multiletter control sequences out of 15000+600000
+ 478455 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  108i,16n,120p,10628b,3848s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on SCMx1.xdv (2 pages, 157640 bytes).
+Output written on SCMx1.xdv (2 pages, 180308 bytes).
